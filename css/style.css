@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.my_div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+#check_result_header {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #2360bd;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table-row-animate {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.table-row-animate:nth-child(even) {
+    animation-delay: 0.1s;
+}
+
+.table-row-animate:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+
+svg{
+	margin-right: 8px;
+
+}
+
+button[type="button"]{
+	margin-left:20px;
+}
+
+
+  .chat-bubble {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    max-width: 70%;
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .typing-animation::after {
+    content: '';
+    display: inline-block;
+    animation: typing 0.07s steps(1, end) forwards;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  
+ @media only screen and (max-width: 700px) {
+  /* Mobile-specific styles go here */
+
+  /* Change the content of h2 tag for mobile devices */
+  .my_div {
+            width: 350px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+}
